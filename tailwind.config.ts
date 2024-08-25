@@ -21,6 +21,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        customFont: ['"Arial"', "sans-serif"],
       },
       backgroundImage: {
         // "hero-section": "url('public/abstract-white-background.jpg')",
@@ -28,6 +29,7 @@ const config = {
       colors: {
         mySecondaryColor: "#264653",
         myPrimaryColor: "#e9c46a",
+        myExtraColor: "#e76f51",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

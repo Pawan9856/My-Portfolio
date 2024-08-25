@@ -17,10 +17,10 @@ const page = () => {
     "Firebase",
   ];
   return (
-    <div className="flex flex-col lg:flex-row gap-10 mt-20 text-mySecondaryColor pb-20">
+    <div className="flex flex-col lg:flex-row gap-10 mt-20 text-mySecondaryColor pb-20 font-mono">
       <div className="w-full lg:w-1/2 px-20 flex flex-col gap-14 h-full">
         <h1 className="font-bold text-2xl">Get to know me!</h1>
-        <p>
+        <p className="">
           I am a dedicated software engineer with solid knowledge of C++,
           JavaScript, and C, and a basic understanding of Java. I have a keen
           interest in data structures and algorithms (DSA), which I enjoy using
@@ -36,7 +36,7 @@ const page = () => {
         <div className="flex justify-start items-center">
           <Link
             href="/contact"
-            className="py-3 text-lg hover:scale-105 transition-all duration-300 font-semibold px-10 rounded-lg bg-[#e76f51] text-white"
+            className="py-3 text-lg hover:scale-105 transition-all duration-300 font-semibold px-10 rounded-lg bg-myExtraColor text-white"
           >
             CONTACT
           </Link>

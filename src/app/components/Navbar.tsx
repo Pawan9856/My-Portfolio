@@ -26,7 +26,7 @@ import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <div className="bg-mySecondaryColor/90 text-slate-200 backdrop-blur-sm sticky top-0 w-full py-3  flex justify-between px-10 ">
+    <div className="bg-mySecondaryColor/90 text-slate-200 backdrop-blur-lg sticky top-0 z-50 w-full py-3  flex justify-between px-10 ">
       <Link className="flex justify-center items-center gap-3" href="/">
         <Avatar className="w-14 h-14">
           <Image src={ProfilePic} alt="profile" width={500} height={500} />
@@ -51,7 +51,7 @@ const Navbar = () => {
           </NavigationMenuItem>
           <NavigationMenuItem className="hover:text-myPrimaryColor cursor-pointer transition-all duration-300">
             <NavigationMenuLink asChild>
-              <Link href="/projects">PROJECTS</Link>
+              <Link href="/projects" prefetch= {false}>PROJECTS</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem className="hover:text-myPrimaryColor cursor-pointer transition-all duration-300">
