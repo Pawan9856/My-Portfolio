@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 import { cn } from "@/lib/utils";
 import Navbar from "./components/Navbar";
@@ -31,6 +32,7 @@ export default function RootLayout({
         <div className="w-screen min-h-screen bg-[#e9c46a]">
           <Navbar />
           <div className="">{children}</div>
+          <Toaster />
         </div>
       </body>
     </html>
