@@ -6,7 +6,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { AlertDialog, AlertDialogContent } from "@/components/ui/alert-dialog";
+import {
+  AlertDialog,
+  AlertDialogContent,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import { toast } from "sonner";
 import Lottie from "lottie-react";
 import EmailLoading from "@/assets/email-loading.json";
@@ -53,6 +57,7 @@ const ContactForm = () => {
   return (
     <>
       <AlertDialog open={action} onOpenChange={setAction}>
+        <AlertDialogTitle className="hidden">sending email..</AlertDialogTitle>
         <AlertDialogContent className="w-[300px] md:w-full">
           <Lottie animationData={EmailLoading} />
         </AlertDialogContent>
@@ -63,7 +68,9 @@ const ContactForm = () => {
           <Lottie animationData={ContactPerson} className="w-full h-[600px]" />
         </div>
         <div className="max-w-[650px] col-span-12 lg:col-span-6 w-full p-10 bg-slate-50 rounded-lg shadow-md">
-          <h1 className="text-2xl text-mySecondaryColor mb-3 font-bold">Get In Touch</h1>
+          <h1 className="text-2xl text-mySecondaryColor mb-3 font-bold">
+            Get In Touch
+          </h1>
           <p className="text-sm text-mySecondaryColor/80 mb-4">
             Feel free to Contact me by submitting the form below and I will get
             back to you as soon as possible{" "}
@@ -74,7 +81,9 @@ const ContactForm = () => {
             className="flex gap-5 flex-col text-mySecondaryColor text-lg"
           >
             <div className="">
-              <Label htmlFor="name" className="font-semibold">Name</Label>
+              <Label htmlFor="name" className="font-semibold">
+                Name
+              </Label>
               <Input
                 type="text"
                 id="name"
@@ -84,7 +93,9 @@ const ContactForm = () => {
               />
             </div>
             <div className="">
-              <Label htmlFor="email" className="font-semibold">Email</Label>
+              <Label htmlFor="email" className="font-semibold">
+                Email
+              </Label>
               <Input
                 type="email"
                 id="email"
@@ -94,7 +105,9 @@ const ContactForm = () => {
               />
             </div>
             <div className="">
-              <Label htmlFor="message" className="font-semibold">Message</Label>
+              <Label htmlFor="message" className="font-semibold">
+                Message
+              </Label>
               <Textarea
                 id="message"
                 placeholder="Enter Your Message Here..."
