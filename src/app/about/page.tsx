@@ -31,7 +31,7 @@ const page = () => {
           blend technical expertise with creativity to create effective software
           solutions.
           <br/>
-          I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me. 
+          I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to contact me. 
         </p>
         <div className="flex justify-start items-center">
           <Link
