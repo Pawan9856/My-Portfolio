@@ -18,7 +18,7 @@ const page = () => {
   ];
   return (
     <div className="flex flex-col lg:flex-row gap-10 mt-20 text-mySecondaryColor pb-20 font-mono">
-      <div className="w-full lg:w-1/2 px-20 flex flex-col gap-14 h-full">
+      <div className="w-full lg:w-1/2 px-10 lg:px-20 flex flex-col gap-10 h-full">
         <h1 className="font-bold text-2xl">Get to know me!</h1>
         <p className="">
           I am a dedicated software engineer with solid knowledge of C++,
@@ -42,7 +42,7 @@ const page = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 px-20 flex flex-col gap-14">
+      <div className="w-full lg:w-1/2 px-10 lg:px-20 flex flex-col gap-14">
         <h1 className="font-bold text-2xl">My Skills</h1>
         <div className="flex gap-4 flex-wrap">
           {Skills.map((skill) => (

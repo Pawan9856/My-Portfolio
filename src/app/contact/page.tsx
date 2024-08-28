@@ -4,7 +4,6 @@ import React, { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import {
   AlertDialog,
@@ -68,7 +67,7 @@ const ContactForm = () => {
           <Lottie animationData={ContactPerson} className="w-full h-[600px]" />
         </div>
         <div className="max-w-[650px] col-span-12 lg:col-span-6 w-full p-10 bg-slate-50 rounded-lg shadow-md">
-          <h1 className="text-2xl text-mySecondaryColor mb-3 font-bold">
+          <h1 className="text-xl sm:text-2xl text-mySecondaryColor mb-3 font-bold">
             Get In Touch
           </h1>
           <p className="text-sm text-mySecondaryColor/80 mb-4">
@@ -78,7 +77,7 @@ const ContactForm = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex gap-5 flex-col text-mySecondaryColor text-lg"
+            className="flex gap-5 flex-col text-mySecondaryColor text-base sm:text-lg"
           >
             <div className="">
               <Label htmlFor="name" className="font-semibold">

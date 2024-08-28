@@ -18,14 +18,14 @@ type Project = {
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <div className="grid grid-cols-12 w-full gap-10">
-      <div className="flex justify-center items-center col-span-12 lg:col-span-7">
-        <Carousel className="max-w-[600px] ">
+    <div className="flex justify-center items-center flex-col lg:flex-row w-full gap-10">
+      <div className="basis-1/2 h-full px-1 flex justify-center items-center lg:col-span-7">
+        <Carousel className="max-w-[600px] w-2/3" >
           <CarouselContent>
             {project.images.map((image, index) => (
               <CarouselItem key={index}>
-                <Card className="p-3 bg-mySecondaryColor">
-                  <CardContent className="p-0 flex  rounded-lg  ">
+                <Card className="p-1 sm:p-3 bg-mySecondaryColor">
+                  <CardContent className="p-0 flex rounded-lg w-full h-full ">
                     <Image
                       src={image}
                       alt="Picture of the author"
@@ -40,17 +40,17 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <CarouselNext />
         </Carousel>
       </div>
-      <div className="flex flex-col gap-7 px-5 py-5 col-span-12 lg:col-span-5 text-center lg:text-start">
-        <h1 className="text-mySecondaryColor text-2xl font-bold ">
+      <div className="basis-1/2 flex flex-col gap-7 px-5 py-5 text-center lg:text-start">
+        <h1 className="text-mySecondaryColor text-lg sm:text-2xl font-bold ">
           {project.title}
         </h1>
-        <p className="text-mySecondaryColor/90 text-lg">
+        <p className="text-mySecondaryColor/90 text-sm sm:text-lg">
           {project.description}
         </p>
         <div className="flex justify-center lg:justify-start">
           <Link
             href="/project/project1"
-            className="py-3 text-lg hover:scale-105 transition-all duration-300 font-semibold px-10 rounded-lg bg-myExtraColor text-white"
+            className="py-3 text-sm sm:text-lg hover:scale-105 transition-all duration-300 font-semibold px-10 rounded-lg bg-myExtraColor text-white"
           >
             CASE STUDY
           </Link>

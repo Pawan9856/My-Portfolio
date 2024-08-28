@@ -18,16 +18,16 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex flex-col justify-center items-center gap-14 text-mySecondaryColor">
-          <span className="text-6xl font-bold w-2/3 text-center">
+          <span className="text-4xl sm:text-6xl font-bold w-2/3 text-center">
             HEY, I&apos;M PAWAN PALIWAL
           </span>
-          <span className=" text-xl w-1/2 text-center font-mono">
+          <span className=" sm:text-xl w-1/2 text-center font-mono">
             A Fullstack Web Developer Building the future of the web, one
             elegant line of code at a time.
           </span>
           <Link
             href="/projects"
-            className="py-4 text-lg hover:scale-105 transition-all duration-300 font-semibold px-20 rounded-lg bg-myExtraColor text-white"
+            className="py-4 text-sm sm:text-lg hover:scale-105 transition-all duration-300 font-semibold px-20 rounded-lg bg-myExtraColor text-white"
           >
             PROJECTS
           </Link>
